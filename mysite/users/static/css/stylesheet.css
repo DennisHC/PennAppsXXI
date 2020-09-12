@@ -1,0 +1,34 @@
+.header_image_text {
+  font-size: 60px;
+}
+.header_image {
+  background: transparent
+    url("https://media4.s-nbcnews.com/j/newscms/2018_48/2660041/181127-gender-reveal-explosion-mn-0750_c7fb073af77fb7146290d89b04cc6f7b.nbcnews-fp-1200-630.jpg");
+  background-position: center;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+}
+.header_text {
+  font-size: 30px;
+  color: "#7353BA";
+  text-align: center;
+}
+.container_block {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: center;
+}
+.dark_background {
+  background-color: #2f195f;
+}
+.light_background {
+  background-color: #ffffff;
+}
+.icon {
+  width: 25%;
+  margin: 2%;
+}
+.text_dark {
+  color: #2f195f;
+}

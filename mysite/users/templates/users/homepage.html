@@ -1,33 +1,96 @@
-{% extends 'users/base.html' %} {% block content %}
+{% extends 'users/base.html' %} {% load static %} {% block content %}
 
 <!-- Header Image and Title -->
-<div
-  class="container-fluid d-flex"
-  style="
-    background: transparent
-      url('https://media4.s-nbcnews.com/j/newscms/2018_48/2660041/181127-gender-reveal-explosion-mn-0750_c7fb073af77fb7146290d89b04cc6f7b.nbcnews-fp-1200-630.jpg');
-    background-position: center;
-    width: 100%;
-    height: 50vh;
-    display: flex;
-  "
->
-  <div style="margin: auto">
-    <h1 class="text-white">Host a Gender Reveal Party</h1>
-    <h1><mark>Without Causing a Wildfire</mark></h1>
+<div class="container-fluid d-flex header_image">
+  <div style="margin: auto; text-align: center">
+    <h1 class="text-white header_image_text">Host a Gender Reveal Party</h1>
+    <h1 class="header_image_text"><mark>Without Causing a Wildfire</mark></h1>
+    <a class="btn btn-secondary" href="{% url 'facts' %}" style="margin-top: 5%"
+      >Learn More</a
+    >
   </div>
 </div>
 
 <!-- Hosting or Attending -->
-<div class="container">
+<div class="container-fluid container_block">
   <div class="row">
-    <div class="col-sm d-flex justify-content-center">
+    <div class="col-md-6">
+      <div class="col order-1">
+        <h3 class="header_text">Want to host an event?</h3>
+      </div>
+      <div class="col order-2">
+        <a class="btn btn-secondary" href="{% url 'register' %}"
+          >Register Here!</a
+        >
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="col order-1">
+        <h3 class="header_text">Attending an Event?</h3>
+      </div>
+      <div class="col order-2">
+        <a class="btn btn-secondary" href="{% url 'register' %}"
+          >Register Here!</a
+        >
+      </div>
+    </div>
+    <!-- <div class="col-sm d-flex justify-content-center">
       <button type="button" class="btn-lg btn-light">It's a boy!</button>
     </div>
     <div class="col-sm d-flex justify-content-center">
       <button type="button" class="btn-lg btn-light">It's a girl!</button>
-    </div>
+    </div> -->
   </div>
 </div>
 
-{% endblock content %}
+<!-- Perks -->
+<div class="container-fluid container_block light_background">
+  <h1 class="text_dark">Why us?</h1>
+  <div class="row" style="margin-top: 3%; margin-bottom: 3%">
+    <div class="col-md-4">
+      <div class="col order-1">
+        <img
+          src="{% static 'images/no-fire.png' %}"
+          alt="No Fire Icon"
+          class="icon"
+        />
+        <!-- Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
+      </div>
+      <div class="col-order-2">
+        <p>Zero risk of starting wildfires.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="col order-1">
+        <img
+          src="{% static 'images/invitation.png' %}"
+          alt="Open envelope with letter"
+          class="icon"
+        />
+      </div>
+      <!-- Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
+      <div class="col order-2">
+        <div class="col-order-2">
+          <p>Invite friends and family virtually.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="col order-1">
+        <img
+          src="{% static 'images/party.png' %}"
+          alt="Confetti"
+          class="icon"
+        />
+        <!-- Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
+        <div class="col order-2">
+          <p>Celebrate together!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% endblock content %}
+</div>
