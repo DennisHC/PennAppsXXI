@@ -1,1 +1,53 @@
-{% extends 'users/base.html' %}
+{% extends 'users/base.html' %} {% block content %}
+<div class="container">
+    <div class="row">
+        <div class="container-fluid rounded" style="height: 150px; background-image: linear-gradient( #d81053,#8448a0)">
+            <h2 class=" text-light" style="font-size:64px; text-align: center; padding-top: 25px">Fire Facts</h2>
+        </div>
+    </div>
+
+    <div class="container bg-light text-muted">
+        <ul>
+            <li id="text">Wildfires and unplanned ignitions are caused by humans approximately 85% of the time, with
+                other causes
+                including lightning strikes and power line issues.</li>
+            <li id="text">As a result of over-aggressive fire fighting in the past century, fire fuels have built up to an extreme amount. This build up
+                in fuels
+                means today's wildfires are stronger and more widespread than past fires in the US.</li>
+            <li id="text">A warming climate and more frequent droughts makes wildfires more </li>
+            <li id="text">If you are in a high-risk area, be sure to avoid any activities that could start
+                or
+                aggravate fires in your area.</li>
+        </ul>
+        <p id="text" style="font-weight: bold;">Be sure to keep up with your local news for updates on fires
+            near you. Below are some more helpful links that can help you stay safe this fire season: </p>
+        <ul>
+            <li id="text"><a
+                    href="https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/wildfire.html">Red
+                    Cross Wildfire Emergency Preparedness Resource</a></li>
+            <li id="text" style="padding-bottom: 50px"><a
+                    href="https://www.accuweather.com/en/accuweather-ready/simple-steps-to-prevent-wildfires/686346">Steps
+                    to Prevent Wildfires</a></li>
+
+            <div class="embed-responsive embed-responsive-16by9" align ="center">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/c6DzHdDQeyE" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <p style="padding-top: 10px; padding-bottom: 20px">Source: <a
+                    href="https://www.usgs.gov/news/fast-fire-facts-usgs">https://www.usgs.gov/news/fast-fire-facts-usgs</a>
+            </p>
+        </ul>
+    </div>
+</div>
+{
+
+}
+<style type="text/css">
+    #text {
+        padding-left: 50px;
+        padding-top: 25px;
+        padding-right: 50px;
+    }
+</style>
+{% endblock content %}
