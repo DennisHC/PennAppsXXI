@@ -8,6 +8,6 @@ Using babble, our users can create and host a party for their baby gender reveal
 
 # Screenshots + Video Walkthrough
 Here are some screenshots of our web application.
-<img src='mysite/image/homepage.jpg' title='homepage' width='' alt='Homepage Screenshot' />
-<img src='mysite/image/facts.jpg' title='facts' width='' alt='Facts Screenshot' />
-<img src='mysite/image/about_us.jpg' title='about us' width='' alt='About Us Screenshot' />
+<img src='images/homepage.jpg' title='homepage' width='' alt='Homepage Screenshot' />
+<img src='images/facts.jpg' title='facts' width='' alt='Facts Screenshot' />
+<img src='images/about_us.jpg' title='about us' width='' alt='About Us Screenshot' />
