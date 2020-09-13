@@ -8,7 +8,7 @@ from django.core.mail import send_mail
 from .forms import RegisterForm
 
 # from twilio.rest import Client
-# import os
+import os
 
 # account_sid = os.environ.get("TWILIO_ACCOUNT_SID")
 # auth_token = os.environ.get("TWILIO_AUTH_TOKEN")
@@ -21,22 +21,9 @@ def register(request):
         form = RegisterForm(request.POST)
         if form.is_valid():
             form.save()
-            send_mail(
-                'Your Account Has Been Successfully Created!',
-                'Welcome! Thanks for registering for our website!',
-                'denniscthdda@gmail.com',
-                [request.POST.get("email")],
-                fail_silently=False,
-            )
-            # message = twilioClient.messages.create(
-            #     to = os.environ.get("MY_PHONE"),
-            #     from_ = "+17142428725",
-            #     body = "You haveQ successfully created an account!"
-            # )
             return redirect("")
     else:
         form = RegisterForm()
-    
     return render(request, 'users/register.html', {"form": form})
 
 def login(request):
