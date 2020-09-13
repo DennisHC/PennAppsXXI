@@ -1,3 +1,7 @@
+a.paragraph_text {
+  font-size: 20px;
+  color: black;
+}
 .btn.btn-primary.btn_boy {
   background-color: "#89cff0";
 }
@@ -42,4 +46,8 @@
 input,
 label {
   margin: 0.4rem 0;
+}
+.sponsor {
+  width: 45%;
+  margin: 2%;
 }

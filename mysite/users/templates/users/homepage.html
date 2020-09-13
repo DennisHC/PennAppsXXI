@@ -82,8 +82,105 @@
       </div>
     </div>
   </div>
-  <h5>Interested in learning more?</h5>
-  <h5>Check out our <a href="{% url 'facts' %}">facts page</a>!</h5>
+</div>
+
+<!-- Ways to Help -->
+<div class="container-fluid container_block">
+  <h1 class="text_dark">Ways You Can Help</h1>
+
+  <div class="row" style="margin-top: 3%">
+    <div class="col-md-4">
+      <a href="{% url 'facts' %}">
+        <div class="col order-1">
+          <img
+            src="{% static 'images/study.png' %}"
+            alt="Open book"
+            class="icon"
+          />
+        </div>
+      </a>
+      <!-- Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
+      <div class="col order-2">
+        <div class="col-order-2">
+          <p class="paragraph_text">Learn how you can prevent wildfires.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <a
+        href="https://disasterphilanthropy.org/donate-to-the-california-wildfires-recovery-fund/"
+      >
+        <div class="col order-1">
+          <img
+            src="{% static 'images/heart.png' %}"
+            alt="Donate"
+            class="icon"
+          />
+          <!-- Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
+        </div>
+      </a>
+      <div class="col-order-2">
+        <p class="paragraph_text">
+          Donate to the California Wildfires Recovery Fund.
+        </p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <a
+        href="https://www.redcross.org/volunteer/become-a-volunteer/urgent-need-for-volunteers.html"
+      >
+        <div class="col order-1">
+          <img
+            src="{% static 'images/volunteer.png' %}"
+            alt="Confetti"
+            class="icon"
+          />
+          <!-- Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
+        </div>
+      </a>
+      <div class="col order-2">
+        <p class="paragraph_text">Volunteer at the American Red Cross.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Sponsors -->
+<div class="container-fluid container_block light_background">
+  <h1 class="text_dark">Thanks to Our Supporters</h1>
+
+  <div class="row" style="margin-top: 3%; margin-bottom: 3%">
+    <div class="col-md-4">
+      <div class>
+        <img
+          src="{% static 'images/boss_baby.png' %}"
+          alt="Boss Baby"
+          class="sponsor"
+        />
+        <!-- Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div>
+        <img
+          src="{% static 'images/dog_with_cans.png' %}"
+          alt="Dog standing on top of a tower of cans."
+          class="sponsor"
+        />
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <img
+        src="{% static 'images/dog_on_coding_cans.png' %}"
+        alt="Dog labeled my code standing on cans saying luck, indian guys on youtube, stack overflow, and online forums from 2008"
+        style="width: 70%"
+      />
+    </div>
+  </div>
 </div>
 
 {% endblock content %}
