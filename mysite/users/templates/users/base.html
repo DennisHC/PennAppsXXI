@@ -35,7 +35,7 @@
   <!-- Navbar Header -->
   <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
     <!-- Navbar content -->
-    <a class="navbar-brand text-dark" href="#">Mock Title</a>
+    <a id = "logo" class="navbar-brand text-white" href="#" >babble</a>
     <button
       class="navbar-toggler"
       type="button"
@@ -107,4 +107,11 @@
     height: 100% !important;
     background: #ebcdf9 !important;
   } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+  #logo {
+    font-weight: bold;
+    font-size: 35px;
+    background: -webkit-linear-gradient(rgb(255, 3, 150), rgb(1, 66, 245));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 </style>
