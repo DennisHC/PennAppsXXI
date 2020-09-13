@@ -1,1 +1,42 @@
-{% extends 'users/base.html' %}
+{% extends 'users/base.html' %} {% block content %}
+<div class="container">
+    <div class="row">
+        <div class="container-fluid rounded" style="height: 150px; background-image: linear-gradient( #0e45fa,#8448a0)">
+            <h2 class=" text-light" style="font-size:64px; text-align: center; padding-top: 25px">About us</h2>
+        </div>
+    </div>
+
+    <div class="container bg-light text-muted">
+        <p id="text" style="font-style: 20px">
+            We at the <b>babble</b> team acknowledge the dangers a simple baby reveal party can create.
+            This September, a wildfire that has already burned over 7,000 acres of land in California has been
+            attributed to
+            a gender reveal mishap. This is not the first baby-reveal tragedy either. Other gender reveal parties in the
+            past have also led to disastrous results. <a
+                href="https://www.cnn.com/2019/07/09/australia/australia-gender-reveal-party-scli-intl/index.html">In
+                July 2019, a car used to release blue smoke burst into flames. In
+                2017, a gender reveal led to a wildfire that burned through 47,000 acres</a>. <a
+                href="https://www.cnn.com/2019/10/28/us/iowa-gender-reveal-death/index.html"><a
+                    href="https://www.cnn.com/2018/11/27/us/arizona-gender-reveal-party-sawmill-wildfire-trnd/index.html"></a>They
+                can even be deadly, as shown in
+                2019 when a gender reveal party device blew up and killed a grandmother</a>. Parties to celebrate a
+            newborn are
+            typically well-intentioned, however, they clearly pose a threat to the safety of participants and locals in
+            areas with a high risk of wildfires.
+
+            <b>babble</b> offers a safer and effective alternative to these parties. Our application will allow users to
+            virtually
+            invite guests to celebrate the coming of their new child, saving nearby forests and foliage from potential
+            destruction.
+
+        </p>
+    </div>
+</div>
+<style type="text/css">
+    #text {
+        padding-left: 50px;
+        padding-top: 25px;
+        padding-right: 50px;
+    }
+</style>
+{% endblock content %}
