@@ -1,5 +1,9 @@
+.btn.btn-primary.btn_boy {
+  background-color: "#89cff0";
+}
 .header_image_text {
   font-size: 60px;
+  color: "#ffffff";
 }
 .header_image {
   background: transparent
@@ -29,6 +33,13 @@
   width: 25%;
   margin: 2%;
 }
+.paragraph_text {
+  font-size: 20px;
+}
 .text_dark {
   color: #2f195f;
+}
+input,
+label {
+  margin: 0.4rem 0;
 }
