@@ -1,5 +1,6 @@
 # PennAppsXXI
-Hackathon Project (9/11/2020 - 9/13/2020). **Satirical** project aiming for **"Best Humor"** award.
+**Hackathon Project** (9/11/2020 - 9/13/2020). **Satirical** project aiming for **"Best Humor"** award.
+Collaborated with **@melindali255** and **@Not John Cuviello** on this project.
 
 # What is Babble?
 **Babble** is a website application to host a baby gender reveal party virtually. In-person gender reveal parties have caused various disasters, with the latest wildfire in California stemming from a mishap from a party. We created babble to prevent these unfortunate events.
