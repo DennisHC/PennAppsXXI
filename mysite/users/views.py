@@ -3,8 +3,17 @@ from django.http import HttpResponse
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login
+from django.core.mail import send_mail
 
 from .forms import RegisterForm
+
+# from twilio.rest import Client
+# import os
+
+# account_sid = os.environ.get("TWILIO_ACCOUNT_SID")
+# auth_token = os.environ.get("TWILIO_AUTH_TOKEN")
+
+# twilioClient = Client(account_sid, auth_token)
 
 
 def register(request):
@@ -12,6 +21,18 @@ def register(request):
         form = RegisterForm(request.POST)
         if form.is_valid():
             form.save()
+            send_mail(
+                'Your Account Has Been Successfully Created!',
+                'Welcome! Thanks for registering for our website!',
+                'denniscthdda@gmail.com',
+                [request.POST.get("email")],
+                fail_silently=False,
+            )
+            # message = twilioClient.messages.create(
+            #     to = os.environ.get("MY_PHONE"),
+            #     from_ = "+17142428725",
+            #     body = "You haveQ successfully created an account!"
+            # )
             return redirect("")
     else:
         form = RegisterForm()
@@ -43,3 +64,6 @@ def logout(request):
 
 def profile(request):
     return render(request, 'users/profile.html')
+
+def reset_password(request):
+    return render(request, 'users/reset_password.html')

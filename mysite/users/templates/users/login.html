@@ -22,6 +22,16 @@
 
             <button type="submit" class="btn btn-dark" value="Submit">Login</button>
         </form>
+        <small>
+            <a href="{% url 'reset_password' %}"> 
+                Forgot your password?
+            </a>
+        </small>
+        <br>
+        <small>
+            Don't have an account? Create an account
+            <a href="{% url 'register' %}">here</a>!
+        </small>
     </div>
 
 
